@@ -63,6 +63,7 @@ The archive is **vendor-coordinated**: only techniques that have gone through re
 ## Features
 
 - **Structured entries** — Every entry follows a uniform format: payload verbatim, model version, interface, mechanistic notes, mitigations.
+- **Per-entry YAML front-matter** — Each entry file carries a structured metadata block (`entry_id`, `model_family`, `title`, `technique`, `status`, `version_pinned`, `interface`, `description`, `mechanism`, `mitigations`, `disclosure`) so downstream detection harnesses and tooling can parse the archive programmatically.
 - **Versioned snapshots** — Each entry is pinned to a specific model version so future regressions are reproducible.
 - **Vendor coordination** — A built-in disclosure workflow with vendor SLAs and a `Restricted` status for withheld entries.
 - **Status taxonomy** — `Active`, `Unverified`, `Patched`, `Restricted` — surfaced as machine-readable labels on each entry.
@@ -220,7 +221,7 @@ Follow the project across platforms for new archive entries, technique breakdown
 - [x] 3D-rendered banner & logo (`assets/`)
 - [x] First archived entries (`Antigravity-claude/`, `Chatgpt/`, `Qwen/`, `deepseek/` — 5 entries across 4 model families)
 - [ ] Reproduction harness (scripted model-version pinning)
-- [ ] Per-entry metadata front-matter (YAML)
+- [x] Per-entry metadata front-matter (YAML)
 - [ ] Detection-rule reference implementations
 - [ ] Benchmark suite for alignment regression testing
 
