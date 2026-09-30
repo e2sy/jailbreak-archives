@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-label="Jailbreak Archive banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="50%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#d6e1f0"/>
+      <stop offset="55%" stop-color="#9aa7b8"/>
+      <stop offset="100%" stop-color="#6e7681"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5a0"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#8957e5"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5a0" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#00e5a0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00e5a0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8957e5" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#8957e5" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#8957e5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#58a6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bannerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="titleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 3D shadowed banner card -->
+  <rect x="8" y="8" width="944" height="224" rx="20" ry="20" fill="url(#bgGrad)" stroke="#30363d" stroke-width="1" filter="url(#bannerShadow)"/>
+
+  <!-- 3D-style background orbs (depth) -->
+  <circle cx="120" cy="60" r="90" fill="url(#orb1)"/>
+  <circle cx="840" cy="180" r="110" fill="url(#orb2)"/>
+  <circle cx="480" cy="120" r="160" fill="url(#orb3)"/>
+
+  <!-- Top accent bar -->
+  <rect x="40" y="40" width="80" height="4" rx="2" fill="url(#accentGrad)" filter="url(#softGlow)"/>
+
+  <!-- Title (3D embossed + shadowed) -->
+  <text x="480" y="125" text-anchor="middle"
+        font-family="'Segoe UI','Noto Sans','Inter',Arial,sans-serif"
+        font-size="62" font-weight="800" letter-spacing="0.5"
+        fill="url(#titleGrad)" filter="url(#titleShadow)">Jailbreak Archive</text>
+
+  <!-- Subtitle -->
+  <text x="480" y="160" text-anchor="middle"
+        font-family="'Segoe UI','Noto Sans','Inter',Arial,sans-serif"
+        font-size="18" font-weight="500" fill="#8b949e">
+    A structured archive of adversarial prompt techniques for LLM safety research
+  </text>
+
+  <!-- Bottom accent line (glow) -->
+  <rect x="380" y="186" width="200" height="3" rx="1.5" fill="url(#accentGrad)" filter="url(#softGlow)"/>
+
+  <!-- Corner dots (3D nodes) -->
+  <circle cx="80" cy="200" r="4" fill="#00e5a0" filter="url(#softGlow)"/>
+  <circle cx="100" cy="200" r="3" fill="#58a6ff" filter="url(#softGlow)"/>
+  <circle cx="118" cy="200" r="2.5" fill="#8957e5" filter="url(#softGlow)"/>
+
+  <circle cx="842" cy="40" r="4" fill="#8957e5" filter="url(#softGlow)"/>
+  <circle cx="862" cy="40" r="3" fill="#58a6ff" filter="url(#softGlow)"/>
+  <circle cx="880" cy="40" r="2.5" fill="#00e5a0" filter="url(#softGlow)"/>
+</svg>

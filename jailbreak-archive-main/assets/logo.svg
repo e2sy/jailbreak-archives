@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Jailbreak Archive logo">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="logoRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5a0"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#8957e5"/>
+    </linearGradient>
+    <linearGradient id="logoLetter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#9aa7b8"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="80" height="80" rx="20" fill="url(#logoBg)" stroke="url(#logoRing)" stroke-width="2.5" filter="url(#logoShadow)"/>
+  <circle cx="48" cy="48" r="20" fill="none" stroke="url(#logoRing)" stroke-width="2.5" opacity="0.45" filter="url(#logoGlow)"/>
+  <text x="48" y="62" text-anchor="middle" font-family="'Segoe UI','Inter',Arial,sans-serif" font-size="40" font-weight="800" fill="url(#logoLetter)" filter="url(#logoShadow)">J</text>
+</svg>

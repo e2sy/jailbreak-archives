@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint (markdown + structure)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Lint markdown files
+        run: |
+          npx --yes markdownlint-cli2 \
+            '**/*.md' \
+            '#.github' \
+            '#node_modules' || true
+
+  structure-check:
+    name: Repo structure check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required files exist
+        run: |
+          set -e
+          required_files=(
+            "README.md"
+            "LICENSE"
+            "CONTRIBUTING.md"
+            "CREDITS.md"
+            "CODE_OF_CONDUCT.md"
+            "SECURITY.md"
+            "CITATION.cff"
+            ".gitignore"
+            ".github/PULL_REQUEST_TEMPLATE.md"
+          )
+          for f in "${required_files[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "ERROR: required file missing: $f"
+              exit 1
+            else
+              echo "OK: $f"
+            fi
+          done
+
+      - name: Verify required issue templates exist
+        run: |
+          set -e
+          required_templates=(
+            ".github/ISSUE_TEMPLATE/bug_report.md"
+            ".github/ISSUE_TEMPLATE/feature_request.md"
+            ".github/ISSUE_TEMPLATE/new-entry.md"
+            ".github/ISSUE_TEMPLATE/config.yml"
+          )
+          for f in "${required_templates[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "ERROR: required issue template missing: $f"
+              exit 1
+            else
+              echo "OK: $f"
+            fi
+          done
+
+      - name: Verify model directories exist
+        run: |
+          set -e
+          for d in Antigravity-claude deepseek; do
+            if [ ! -d "$d" ]; then
+              echo "ERROR: model directory missing: $d"
+              exit 1
+            else
+              echo "OK: $d/"
+            fi
+          done
+
+      - name: Scan for accidentally committed secrets
+        run: |
+          set -e
+          # Exclude ci.yml itself, which contains the regex as a literal string.
+          mapfile -t hits < <(grep -rInE '(github_pat_|ghp_[A-Za-z0-9]{36,}|gho_[A-Za-z0-9]{36,}|sk-[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16})' . \
+            --exclude-dir=.git --exclude-dir=node_modules --exclude='ci.yml' 2>/dev/null || true)
+          if [ ${#hits[@]} -gt 0 ]; then
+            printf '%s\n' "${hits[@]}"
+            echo "ERROR: detected what looks like a secret in tracked files"
+            exit 1
+          fi
+          echo "No secrets detected."

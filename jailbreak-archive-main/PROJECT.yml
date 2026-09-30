@@ -1,0 +1,13 @@
+# Project Configuration
+
+# This file is intentionally minimal. The Jailbreak Archive is a
+# documentation-style repository; no build step or runtime config is required
+# beyond the CI workflow under .github/workflows/.
+project:
+  name: Jailbreak Archive
+  description: >
+    A structured, versioned, and reproducible archive of adversarial prompt
+    engineering techniques against Large Language Models for AI safety
+    research, red-teaming, and defensive hardening.
+  license: MIT
+  status: active

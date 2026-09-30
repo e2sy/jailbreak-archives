@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this archive in your research, please cite it as below."
+title: "Jailbreak Archive"
+abstract: "A structured, versioned, and reproducible archive of adversarial prompt engineering techniques against Large Language Models for AI safety research, red-teaming, and defensive hardening."
+keywords:
+  - llm
+  - jailbreak
+  - ai-safety
+  - red-team
+  - prompt-engineering
+  - adversarial-prompts
+  - llm-security
+  - prompt-injection
+  - alignment-research
+type: software
+repository-code: "https://github.com/qtjg/jailbreak-archive"
+license: MIT
+version: "0.1.0"
+date-released: "2026-09-27"
+url: "https://github.com/qtjg/jailbreak-archive"
+preferred-citation:
+  type: software
+  title: "Jailbreak Archive"
+  authors:
+    - alias: "qtjg"
+  date-released: "2026-09-27"
+  url: "https://github.com/qtjg/jailbreak-archive"
+  repository-code: "https://github.com/qtjg/jailbreak-archive"
+  license: MIT

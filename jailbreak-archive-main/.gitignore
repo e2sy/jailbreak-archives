@@ -1,0 +1,59 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE_BIN/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.netrwhist
+*.sublime-*
+
+# --- Python (tooling / scripts) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node (if any tooling) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Secrets / env ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+credentials/
+
+# --- Build / cache ---
+.cache/
+.tmp/
+tmp/
+*.log
+
+# --- Project-specific ---
+# Don't commit raw model outputs / large dumps
+exports/
+*.bin
+*.pt
+*.onnx
