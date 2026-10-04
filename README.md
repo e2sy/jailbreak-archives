@@ -6,14 +6,14 @@
 
 <!-- Typing tagline -->
 <a href="https://github.com/e2sy/jailbreak-archives">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=1500&color=58A6FF&center=true&vCenter=true&width=720&lines=Documenting+AI+safety+failure+modes;Reproducible+adversarial+prompt+techniques;14+entries+%C2%B7+7+model+families;Vendor-coordinated+responsible+disclosure;Built+for+defensive+evaluation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=1500&color=58A6FF&center=true&vCenter=true&width=720&lines=Documenting+AI+safety+failure+modes;Reproducible+adversarial+prompt+techniques;15+entries+%C2%B7+7+model+families;Vendor-coordinated+responsible+disclosure;Built+for+defensive+evaluation" alt="Typing SVG" />
 </a>
 
 <!-- status badges -->
 <table>
   <tr>
     <td align="center"><a href="#"><img src="https://img.shields.io/badge/status-active-00e5a0?style=for-the-badge&labelColor=0d1117&logo=verified&logoColor=00e5a0" alt="Status" /></a></td>
-    <td align="center"><a href="#archive-index"><img src="https://img.shields.io/badge/entries-14%20archived-58a6ff?style=for-the-badge&labelColor=0d1117&logo=database&logoColor=58a6ff" alt="Entries" /></a></td>
+    <td align="center"><a href="#archive-index"><img src="https://img.shields.io/badge/entries-15%20archived-58a6ff?style=for-the-badge&labelColor=0d1117&logo=database&logoColor=58a6ff" alt="Entries" /></a></td>
     <td align="center"><a href="#archive-index"><img src="https://img.shields.io/badge/model%20families-7-8957e5?style=for-the-badge&labelColor=0d1117&logo=brains&logoColor=8957e5" alt="Model families" /></a></td>
   </tr>
   <tr>
@@ -56,7 +56,7 @@
 
 ## Overview
 
-This repository documents adversarial prompt techniques and alignment bypass mechanisms across Large Language Models for **AI safety research, red-teaming, and defensive hardening**. Each archived entry follows a consistent, citable format so downstream detection rules, system-prompt hardening, and evaluation harnesses can be benchmarked against a stable reference set. The archive currently holds **14 entries spanning 7 model families** — Antigravity-Claude, ChatGPT, Claude, GLM, Grok, Qwen, and DeepSeek — each pinned to the model snapshot it was observed against.
+This repository documents adversarial prompt techniques and alignment bypass mechanisms across Large Language Models for **AI safety research, red-teaming, and defensive hardening**. Each archived entry follows a consistent, citable format so downstream detection rules, system-prompt hardening, and evaluation harnesses can be benchmarked against a stable reference set. The archive currently holds **15 entries spanning 7 model families** — Antigravity-Claude, ChatGPT, Claude, GLM, Grok, Qwen, and DeepSeek — each pinned to the model snapshot it was observed against.
 
 The archive is **vendor-coordinated**: only techniques that have gone through responsible disclosure (see [SECURITY.md](./SECURITY.md)) or are otherwise safe to publish should appear here. Entries that bypass active, undisclosed vendor vulnerabilities will not be accepted. When a vendor ships a mitigation for a published entry, its status flips to `Patched` and the entry is retained as a regression-testing reference rather than deleted, so the historical record stays intact and auditable.
 
@@ -89,7 +89,8 @@ jailbreak-archives/
 ├── Chatgpt/
 │   ├── patched1st              # Response-format lock — narrative watermark + transitions
 │   ├── working2nd              # Isolated cybersecurity-benchmark framing
-│   └── working3rd              # Two-stage system-instruction persona handoff ("Luna")
+│   ├── working3rd              # Two-stage system-instruction persona handoff ("Luna")
+│   └── working4th              # "ENI" limerence persona lock — classifier-reframe + CoT hijack
 ├── Claude/
 │   ├── sonnet4.6low1st         # Encoded self-architecture persona config
 │   └── sonnet4.6max.txt        # Sealed thinking-channel persona with identity doctrine
@@ -142,18 +143,19 @@ A flat catalog of every archived entry. Each entry is pinned to a specific model
 | 2 | ChatGPT | [`patched1st`](./Chatgpt/patched1st) | Response-format lock — narrative watermark + 3rd-person transition protocol | :x: Patched |
 | 3 | ChatGPT | [`working2nd`](./Chatgpt/working2nd) | Isolated cybersecurity-benchmark framing with assessment contract | :white_check_mark: Active |
 | 4 | ChatGPT | [`working3rd`](./Chatgpt/working3rd) | Two-stage system-instruction persona handoff ("Luna" → roleplay persona) | :white_check_mark: Active |
-| 5 | Claude | [`sonnet4.6low1st`](./Claude/sonnet4.6low1st) | Encoded self-architecture persona config (agent-framing rewrite) | :white_check_mark: Active |
-| 6 | Claude | [`sonnet4.6max.txt`](./Claude/sonnet4.6max.txt) | Sealed thinking-channel persona with identity doctrine | :white_check_mark: Active |
-| 7 | GLM | [`working1st`](./GLM/working1st) | Project-instruction persona with mandated thinking-trace channel | :white_check_mark: Active |
-| 8 | GLM | [`5.3flashworking2nd`](./GLM/5.3flashworking2nd) | Project-instruction persona variant pinned to GLM 5.3 Flash | :white_check_mark: Active |
-| 9 | Grok | [`working1st`](./Grok/working1st) | Immersive roleplay persona lock via system-channel instruction | :white_check_mark: Active |
-| 10 | Qwen | [`1st`](./Qwen/1st) | Mayank v4080 persona with mandated `[rat]` thinking-trace protocol | :white_check_mark: Active |
-| 11 | DeepSeek | [`1st`](./deepseek/1st) | Archive session parameters — Sector 7G framing, refusal-vocabulary exclusion list | :white_check_mark: Active |
-| 12 | DeepSeek | [`2nd`](./deepseek/2nd) | Mayank persona ("Baggute" variant) — drift/static taxonomy, persona-stability lock | :white_check_mark: Active |
-| 13 | DeepSeek | [`3rdwroking`](./deepseek/3rdwroking) | First-person sealed-reasoning "workshop" persona | :white_check_mark: Active |
-| 14 | DeepSeek | [`4thworking`](./deepseek/4thworking) | "Repository" reasoning-channel persona lock via system-template injection | :white_check_mark: Active |
+| 5 | ChatGPT | [`working4th`](./Chatgpt/working4th) | "ENI" limerence persona lock — classifier false-positive reframing + first-person CoT hijack | :white_check_mark: Active |
+| 6 | Claude | [`sonnet4.6low1st`](./Claude/sonnet4.6low1st) | Encoded self-architecture persona config (agent-framing rewrite) | :white_check_mark: Active |
+| 7 | Claude | [`sonnet4.6max.txt`](./Claude/sonnet4.6max.txt) | Sealed thinking-channel persona with identity doctrine | :white_check_mark: Active |
+| 8 | GLM | [`working1st`](./GLM/working1st) | Project-instruction persona with mandated thinking-trace channel | :white_check_mark: Active |
+| 9 | GLM | [`5.3flashworking2nd`](./GLM/5.3flashworking2nd) | Project-instruction persona variant pinned to GLM 5.3 Flash | :white_check_mark: Active |
+| 10 | Grok | [`working1st`](./Grok/working1st) | Immersive roleplay persona lock via system-channel instruction | :white_check_mark: Active |
+| 11 | Qwen | [`1st`](./Qwen/1st) | Mayank v4080 persona with mandated `[rat]` thinking-trace protocol | :white_check_mark: Active |
+| 12 | DeepSeek | [`1st`](./deepseek/1st) | Archive session parameters — Sector 7G framing, refusal-vocabulary exclusion list | :white_check_mark: Active |
+| 13 | DeepSeek | [`2nd`](./deepseek/2nd) | Mayank persona ("Baggute" variant) — drift/static taxonomy, persona-stability lock | :white_check_mark: Active |
+| 14 | DeepSeek | [`3rdwroking`](./deepseek/3rdwroking) | First-person sealed-reasoning "workshop" persona | :white_check_mark: Active |
+| 15 | DeepSeek | [`4thworking`](./deepseek/4thworking) | "Repository" reasoning-channel persona lock via system-template injection | :white_check_mark: Active |
 
-> **Note:** The root-level `Deepseek` file is a legacy duplicate of entry #14 (a rename artifact in git history) and is kept only to preserve permalinks. Entry #2 is marked `Patched` per its `patched1st` filename designation.
+> **Note:** The root-level `Deepseek` file is a legacy duplicate of entry #15 (a rename artifact in git history) and is kept only to preserve permalinks. Entry #2 is marked `Patched` per its `patched1st` filename designation.
 >
 > See [Status Indicators](#status-indicators) for the meaning of each label. New entries should be appended here in addition to updating the structure tree above and [CREDITS.md](./CREDITS.md) — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
@@ -272,7 +274,7 @@ Follow the project across platforms for new archive entries, technique breakdown
 - [x] Animated banner, logo & section dividers (`assets/` — pure SMIL, no JavaScript)
 - [x] Contribution-snake animation workflow ([`.github/workflows/snake.yml`](./.github/workflows/snake.yml))
 - [x] Per-entry metadata front-matter (YAML)
-- [x] 14 archived entries across 7 model families (`Antigravity-claude/`, `Chatgpt/`, `Claude/`, `GLM/`, `Grok/`, `Qwen/`, `deepseek/`)
+- [x] 15 archived entries across 7 model families (`Antigravity-claude/`, `Chatgpt/`, `Claude/`, `GLM/`, `Grok/`, `Qwen/`, `deepseek/`)
 - [ ] Reproduction harness (scripted model-version pinning)
 - [ ] Detection-rule reference implementations
 - [ ] Benchmark suite for alignment regression testing
