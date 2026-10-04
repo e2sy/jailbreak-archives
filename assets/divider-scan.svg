@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="36" viewBox="0 0 900 36" role="img" aria-label="section divider">
+  <title>Animated scanner divider</title>
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#58a6ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#30363d" stop-opacity="0"/>
+      <stop offset="0.15" stop-color="#30363d" stop-opacity="1"/>
+      <stop offset="0.85" stop-color="#30363d" stop-opacity="1"/>
+      <stop offset="1" stop-color="#30363d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>
+
+  <line x1="60" y1="18" x2="840" y2="18" stroke="url(#rail)" stroke-width="1.5"/>
+
+  <!-- sweeping beam -->
+  <g>
+    <rect x="-170" y="15.5" width="170" height="5" rx="2.5" fill="url(#beam)" filter="url(#gblur)"/>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="1080 0" dur="3.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- center diamond -->
+  <g transform="translate(450,18)">
+    <rect x="-6" y="-6" width="12" height="12" fill="#58a6ff" transform="rotate(45)">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-10" y="-10" width="20" height="20" fill="none" stroke="#58a6ff" stroke-width="1" transform="rotate(45)" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- endpoint pulses (alternating) -->
+  <circle cx="60" cy="18" r="4" fill="#00e5a0">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="840" cy="18" r="4" fill="#8957e5">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="18" r="4" fill="none" stroke="#00e5a0">
+    <animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="840" cy="18" r="4" fill="none" stroke="#8957e5">
+    <animate attributeName="r" values="4;12" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+</svg>

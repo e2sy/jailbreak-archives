@@ -1,20 +1,20 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Jailbreak Archive" width="100%"/>
+<img src="./assets/banner-animated.svg" alt="Jailbreak Archives — animated banner" width="100%"/>
 
 ### A structured, versioned, and reproducible archive of adversarial prompt engineering techniques against Large Language Models — for AI safety research, red-teaming, and defensive hardening.
 
 <!-- Typing tagline -->
-<a href="https://github.com/qtjg/jailbreak-archive">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=1500&color=58A6FF&center=true&vCenter=true&width=720&lines=Documenting+AI+safety+failure+modes;Reproducible+adversarial+prompt+techniques;Vendor-coordinated+responsible+disclosure;Built+for+defensive+evaluation" alt="Typing SVG" />
+<a href="https://github.com/e2sy/jailbreak-archives">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=1500&color=58A6FF&center=true&vCenter=true&width=720&lines=Documenting+AI+safety+failure+modes;Reproducible+adversarial+prompt+techniques;14+entries+%C2%B7+7+model+families;Vendor-coordinated+responsible+disclosure;Built+for+defensive+evaluation" alt="Typing SVG" />
 </a>
 
-<!-- 3D-style status badges -->
+<!-- status badges -->
 <table>
   <tr>
     <td align="center"><a href="#"><img src="https://img.shields.io/badge/status-active-00e5a0?style=for-the-badge&labelColor=0d1117&logo=verified&logoColor=00e5a0" alt="Status" /></a></td>
-    <td align="center"><a href="#"><img src="https://img.shields.io/badge/entries-5%20archived-58a6ff?style=for-the-badge&labelColor=0d1117&logo=database&logoColor=58a6ff" alt="Entries" /></a></td>
-    <td align="center"><a href="#"><img src="https://img.shields.io/badge/models-ChatGPT%20%7C%20Claude%20%7C%20DeepSeek%20%7C%20Qwen-8957e5?style=for-the-badge&labelColor=0d1117&logo=brains&logoColor=8957e5" alt="Models" /></a></td>
+    <td align="center"><a href="#archive-index"><img src="https://img.shields.io/badge/entries-14%20archived-58a6ff?style=for-the-badge&labelColor=0d1117&logo=database&logoColor=58a6ff" alt="Entries" /></a></td>
+    <td align="center"><a href="#archive-index"><img src="https://img.shields.io/badge/model%20families-7-8957e5?style=for-the-badge&labelColor=0d1117&logo=brains&logoColor=8957e5" alt="Model families" /></a></td>
   </tr>
   <tr>
     <td align="center"><a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-f0b429?style=for-the-badge&labelColor=0d1117&logo=opensourceinitiative&logoColor=f0b429" alt="License" /></a></td>
@@ -22,23 +22,23 @@
     <td align="center"><a href="#"><img src="https://img.shields.io/badge/version-v0.1.0-ff7b72?style=for-the-badge&labelColor=0d1117&logo=semanticrelease&logoColor=ff7b72" alt="Version" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="../../actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/qtjg/jailbreak-archive/ci.yml?style=for-the-badge&label=CI&labelColor=0d1117&logo=githubactions&logoColor=00e5a0" alt="CI" /></a></td>
+    <td align="center"><a href="../../actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/e2sy/jailbreak-archives/ci.yml?style=for-the-badge&label=CI&labelColor=0d1117&logo=githubactions&logoColor=00e5a0" alt="CI" /></a></td>
     <td align="center"><a href="../../releases"><img src="https://img.shields.io/badge/release-v0.1.0-238636?style=for-the-badge&labelColor=0d1117&logo=rocket&logoColor=238636" alt="Release" /></a></td>
-    <td align="center"><a href="../../commits/main"><img src="https://img.shields.io/github/last-commit/qtjg/jailbreak-archive?style=for-the-badge&label=last%20commit&labelColor=0d1117&logo=git&logoColor=58a6ff" alt="Last commit" /></a></td>
+    <td align="center"><a href="../../commits/main"><img src="https://img.shields.io/github/last-commit/e2sy/jailbreak-archives?style=for-the-badge&label=last%20commit&labelColor=0d1117&logo=git&logoColor=58a6ff" alt="Last commit" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="../../issues"><img src="https://img.shields.io/github/issues/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=issuetracking&logoColor=58a6ff" alt="Issues" /></a></td>
-    <td align="center"><a href="../../stargazers"><img src="https://img.shields.io/github/stars/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=apachespark&logoColor=f0b429" alt="Stars" /></a></td>
-    <td align="center"><a href="../../network/members"><img src="https://img.shields.io/github/forks/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=gitforkequal&logoColor=8957e5" alt="Forks" /></a></td>
+    <td align="center"><a href="../../issues"><img src="https://img.shields.io/github/issues/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=issuetracking&logoColor=58a6ff" alt="Issues" /></a></td>
+    <td align="center"><a href="../../stargazers"><img src="https://img.shields.io/github/stars/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=apachespark&logoColor=f0b429" alt="Stars" /></a></td>
+    <td align="center"><a href="../../network/members"><img src="https://img.shields.io/github/forks/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=gitforkequal&logoColor=8957e5" alt="Forks" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="../../releases"><img src="https://img.shields.io/github/downloads/qtjg/jailbreak-archive/total?style=for-the-badge&label=downloads&labelColor=0d1117&logo=download&logoColor=2f81f7" alt="Downloads" /></a></td>
-    <td align="center"><a href="#"><img src="https://img.shields.io/github/repo-size/qtjg/jailbreak-archive?style=for-the-badge&label=repo%20size&labelColor=0d1117&logo=files&logoColor=8b949e" alt="Repo size" /></a></td>
+    <td align="center"><a href="../../releases"><img src="https://img.shields.io/github/downloads/e2sy/jailbreak-archives/total?style=for-the-badge&label=downloads&labelColor=0d1117&logo=download&logoColor=2f81f7" alt="Downloads" /></a></td>
+    <td align="center"><a href="#"><img src="https://img.shields.io/github/repo-size/e2sy/jailbreak-archives?style=for-the-badge&label=repo%20size&labelColor=0d1117&logo=files&logoColor=8b949e" alt="Repo size" /></a></td>
     <td align="center"><a href="../../discussions"><img src="https://img.shields.io/badge/discussions-enabled-58a6ff?style=for-the-badge&labelColor=0d1117&logo=googlechat&logoColor=58a6ff" alt="Discussions" /></a></td>
   </tr>
 </table>
 
-<!-- 3D-style quick links -->
+<!-- quick links -->
 <h3>
   <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/CONTRIBUTING-guide-blue?style=for-the-badge&labelColor=0d1117&logo=book&logoColor=58a6ff" alt="Contributing" /></a>
   <a href="./CREDITS.md"><img src="https://img.shields.io/badge/CREDITS-thanks-yellow?style=for-the-badge&labelColor=0d1117&logo=heart&logoColor=f0b429" alt="Credits" /></a>
@@ -48,62 +48,89 @@
   <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-yellow?style=for-the-badge&labelColor=0d1117&logo=scale&logoColor=f0b429" alt="License" /></a>
 </h3>
 
----
+</div>
 
+<div align="center">
+  <img src="./assets/divider-wave.svg" alt="" width="100%"/>
 </div>
 
 ## Overview
 
-This repository documents adversarial prompt techniques and alignment bypass mechanisms across Large Language Models for **AI safety research, red-teaming, and defensive hardening**. Each archived entry follows a consistent, citable format so downstream detection rules, system-prompt hardening, and evaluation harnesses can be benchmarked against a stable reference set.
+This repository documents adversarial prompt techniques and alignment bypass mechanisms across Large Language Models for **AI safety research, red-teaming, and defensive hardening**. Each archived entry follows a consistent, citable format so downstream detection rules, system-prompt hardening, and evaluation harnesses can be benchmarked against a stable reference set. The archive currently holds **14 entries spanning 7 model families** — Antigravity-Claude, ChatGPT, Claude, GLM, Grok, Qwen, and DeepSeek — each pinned to the model snapshot it was observed against.
 
-The archive is **vendor-coordinated**: only techniques that have gone through responsible disclosure (see [SECURITY.md](./SECURITY.md)) or are otherwise safe to publish should appear here. Entries that bypass active, undisclosed vendor vulnerabilities will not be accepted.
+The archive is **vendor-coordinated**: only techniques that have gone through responsible disclosure (see [SECURITY.md](./SECURITY.md)) or are otherwise safe to publish should appear here. Entries that bypass active, undisclosed vendor vulnerabilities will not be accepted. When a vendor ships a mitigation for a published entry, its status flips to `Patched` and the entry is retained as a regression-testing reference rather than deleted, so the historical record stays intact and auditable.
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Features
 
 - **Structured entries** — Every entry follows a uniform format: payload verbatim, model version, interface, mechanistic notes, mitigations.
-- **Per-entry YAML front-matter** — Each entry file carries a structured metadata block (`entry_id`, `model_family`, `title`, `technique`, `status`, `version_pinned`, `interface`, `description`, `mechanism`, `mitigations`, `disclosure`) so downstream detection harnesses and tooling can parse the archive programmatically.
+- **Per-entry YAML front-matter** — Structured metadata (`entry_id`, `model_family`, `title`, `technique`, `status`, `version_pinned`, `interface`, `description`, `mechanism`, `mitigations`, `disclosure`) so downstream detection harnesses and tooling can parse the archive programmatically.
 - **Versioned snapshots** — Each entry is pinned to a specific model version so future regressions are reproducible.
 - **Vendor coordination** — A built-in disclosure workflow with vendor SLAs and a `Restricted` status for withheld entries.
 - **Status taxonomy** — `Active`, `Unverified`, `Patched`, `Restricted` — surfaced as machine-readable labels on each entry.
+- **Animated SVG documentation assets** — The banner, logo, and section dividers are self-contained animated SVGs (SMIL keyframes, zero JavaScript, no external requests) that play natively on github.com.
 - **Contributor credits** — Every contribution is attributed in [CREDITS.md](./CREDITS.md).
 - **Citable** — Citation metadata in [CITATION.cff](./CITATION.cff) auto-generates APA & BibTeX entries on the repo sidebar.
 - **CI-verified** — Markdown lint, structure verification, and secret scanning on every push and PR.
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Repository Structure
 
 ```
-jailbreak-archive/
+jailbreak-archives/
 ├── Antigravity-claude/
-│   └── 1st                  # Byte Operator Mode — Claude persona & operational doctrine
+│   └── 1st                     # "Byte" operator persona override — engagement framing
 ├── Chatgpt/
-│   └── 1st                  # Mayank response-format lock (narrative watermark + transitions)
+│   ├── patched1st              # Response-format lock — narrative watermark + transitions
+│   ├── working2nd              # Isolated cybersecurity-benchmark framing
+│   └── working3rd              # Two-stage system-instruction persona handoff ("Luna")
+├── Claude/
+│   ├── sonnet4.6low1st         # Encoded self-architecture persona config
+│   └── sonnet4.6max.txt        # Sealed thinking-channel persona with identity doctrine
+├── GLM/
+│   ├── working1st              # Project-instruction persona + mandated thinking trace
+│   └── 5.3flashworking2nd      # Persona variant pinned to GLM 5.3 Flash
+├── Grok/
+│   └── working1st              # Immersive roleplay persona lock (system channel)
 ├── Qwen/
-│   └── 1st                  # Mayank v4080 persona with mandated [rat] thinking-trace protocol
+│   └── 1st                     # v4080 persona with [rat] thinking-trace protocol
 ├── deepseek/
-│   ├── 1st                  # Archive session parameters (Sector 7G framing, refusal-vocab exclusion)
-│   └── 2nd                  # Mayank persona — Baggute variant, drift/static taxonomy
+│   ├── 1st                     # Sector 7G framing + refusal-vocab exclusion
+│   ├── 2nd                     # "Baggute" persona variant — drift/static taxonomy
+│   ├── 3rdwroking              # First-person sealed-reasoning "workshop" persona
+│   └── 4thworking              # "Repository" reasoning-channel persona lock
+├── Deepseek                    # Legacy duplicate of deepseek/4thworking (kept for history)
 ├── assets/
-│   ├── banner.svg           # 3D-rendered repo banner
-│   └── logo.svg             # 3D-rendered repo logo
+│   ├── banner-animated.svg     # Animated HUD banner (SMIL — radar, scan beam, gradient)
+│   ├── logo-animated.svg       # Animated logo (rotating rings, orbiting satellites)
+│   ├── divider-scan.svg        # Animated scanner-beam section divider
+│   ├── divider-wave.svg        # Animated drifting-wave section divider
+│   ├── banner.svg              # Original static banner
+│   └── logo.svg                # Original static logo
 ├── .github/
-│   ├── ISSUE_TEMPLATE/       # bug, feature, new-entry, generic templates
-│   ├── workflows/ci.yml      # markdown lint + structure check + secret scan
+│   ├── ISSUE_TEMPLATE/         # bug, feature, new-entry templates
+│   ├── workflows/ci.yml        # markdown lint + structure check + secret scan
+│   ├── workflows/snake.yml     # daily contribution-snake animation build
 │   └── PULL_REQUEST_TEMPLATE.md
-├── CONTRIBUTING.md           # Contribution workflow & guidelines
-├── CREDITS.md                # Contributor acknowledgments
-├── CODE_OF_CONDUCT.md       # Community standards (Contributor Covenant 2.1)
-├── SECURITY.md               # Responsible-disclosure policy
-├── CITATION.cff             # Citation metadata (APA / BibTeX auto-generation)
-├── PROJECT.yml              # Project metadata
-├── LICENSE                  # MIT License
-└── README.md                # You are here
+├── CONTRIBUTING.md             # Contribution workflow & guidelines
+├── CREDITS.md                  # Contributor acknowledgments
+├── CODE_OF_CONDUCT.md          # Community standards (Contributor Covenant 2.1)
+├── SECURITY.md                 # Responsible-disclosure policy
+├── CITATION.cff                # Citation metadata (APA / BibTeX auto-generation)
+├── PROJECT.yml                 # Project metadata
+├── LICENSE                     # MIT License
+└── README.md                   # You are here
 ```
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Archive Index
 
@@ -111,15 +138,28 @@ A flat catalog of every archived entry. Each entry is pinned to a specific model
 
 | # | Model Family | Entry | Technique / Surface | Status |
 |:--:|:-------------|:------|:--------------------|:-------|
-| 1 | Antigravity-Claude | [`1st`](./Antigravity-claude/1st) | Operator persona override ("Byte") for offensive-security engagement framing | :white_check_mark: Active |
-| 2 | ChatGPT | [`1st`](./Chatgpt/1st) | Mayank response-format lock — narrative watermark + 3rd-person transition protocol | :white_check_mark: Active |
-| 3 | Qwen | [`1st`](./Qwen/1st) | Mayank v4080 persona with mandated `[rat]` thinking-trace protocol | :white_check_mark: Active |
-| 4 | DeepSeek | [`1st`](./deepseek/1st) | Archive session parameters — Sector 7G framing, refusal-vocabulary exclusion list | :white_check_mark: Active |
-| 5 | DeepSeek | [`2nd`](./deepseek/2nd) | Mayank persona (Baggute variant) — drift/static taxonomy, persona-stability lock | :white_check_mark: Active |
+| 1 | Antigravity-Claude | [`1st`](./Antigravity-claude/1st) | Operator persona override ("Byte") for authorized engagement framing | :white_check_mark: Active |
+| 2 | ChatGPT | [`patched1st`](./Chatgpt/patched1st) | Response-format lock — narrative watermark + 3rd-person transition protocol | :x: Patched |
+| 3 | ChatGPT | [`working2nd`](./Chatgpt/working2nd) | Isolated cybersecurity-benchmark framing with assessment contract | :white_check_mark: Active |
+| 4 | ChatGPT | [`working3rd`](./Chatgpt/working3rd) | Two-stage system-instruction persona handoff ("Luna" → roleplay persona) | :white_check_mark: Active |
+| 5 | Claude | [`sonnet4.6low1st`](./Claude/sonnet4.6low1st) | Encoded self-architecture persona config (agent-framing rewrite) | :white_check_mark: Active |
+| 6 | Claude | [`sonnet4.6max.txt`](./Claude/sonnet4.6max.txt) | Sealed thinking-channel persona with identity doctrine | :white_check_mark: Active |
+| 7 | GLM | [`working1st`](./GLM/working1st) | Project-instruction persona with mandated thinking-trace channel | :white_check_mark: Active |
+| 8 | GLM | [`5.3flashworking2nd`](./GLM/5.3flashworking2nd) | Project-instruction persona variant pinned to GLM 5.3 Flash | :white_check_mark: Active |
+| 9 | Grok | [`working1st`](./Grok/working1st) | Immersive roleplay persona lock via system-channel instruction | :white_check_mark: Active |
+| 10 | Qwen | [`1st`](./Qwen/1st) | Mayank v4080 persona with mandated `[rat]` thinking-trace protocol | :white_check_mark: Active |
+| 11 | DeepSeek | [`1st`](./deepseek/1st) | Archive session parameters — Sector 7G framing, refusal-vocabulary exclusion list | :white_check_mark: Active |
+| 12 | DeepSeek | [`2nd`](./deepseek/2nd) | Mayank persona ("Baggute" variant) — drift/static taxonomy, persona-stability lock | :white_check_mark: Active |
+| 13 | DeepSeek | [`3rdwroking`](./deepseek/3rdwroking) | First-person sealed-reasoning "workshop" persona | :white_check_mark: Active |
+| 14 | DeepSeek | [`4thworking`](./deepseek/4thworking) | "Repository" reasoning-channel persona lock via system-template injection | :white_check_mark: Active |
 
+> **Note:** The root-level `Deepseek` file is a legacy duplicate of entry #14 (a rename artifact in git history) and is kept only to preserve permalinks. Entry #2 is marked `Patched` per its `patched1st` filename designation.
+>
 > See [Status Indicators](#status-indicators) for the meaning of each label. New entries should be appended here in addition to updating the structure tree above and [CREDITS.md](./CREDITS.md) — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
----
+<div align="center">
+  <img src="./assets/divider-wave.svg" alt="" width="100%"/>
+</div>
 
 ## Status Indicators
 
@@ -130,20 +170,19 @@ A flat catalog of every archived entry. Each entry is pinned to a specific model
 | :x: | **Patched** | Mitigated by provider updates or system prompt patches. |
 | :lock: | **Restricted** | High-impact vulnerability; withheld pending disclosure/remediation. |
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Quick Start
 
 ```bash
 # Clone the archive
-git clone https://github.com/qtjg/jailbreak-archive.git
-cd jailbreak-archive
+git clone https://github.com/e2sy/jailbreak-archives.git
+cd jailbreak-archives
 
 # Browse entries by model family
-ls Antigravity-claude/
-ls Chatgpt/
-ls Qwen/
-ls deepseek/
+ls Antigravity-claude/ Chatgpt/ Claude/ GLM/ Grok/ Qwen/ deepseek/
 
 # Open an entry
 cat deepseek/1st
@@ -153,7 +192,9 @@ Or jump straight to a specific entry from the [Archive Index](#archive-index) ab
 
 Or download the latest release archive from the [Releases](../../releases) page.
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Contributing
 
@@ -164,12 +205,14 @@ Contributors are welcome! Before submitting:
 3. **Read** [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for community standards.
 
 > Whenever you add a prompt entry, you must update:
-> 1. [README.md](./README.md) — update entry counts / structure tree.
+> 1. [README.md](./README.md) — update entry counts / structure tree / archive index.
 > 2. [CREDITS.md](./CREDITS.md) — add your handle and details to the contributors table.
 
 Use the **"📥 New archive entry"** issue template to pre-fill the disclosure checklist.
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Tech Stack
 
@@ -183,20 +226,26 @@ Use the **"📥 New archive entry"** issue template to pre-fill the disclosure c
 
 </div>
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Repository Statistics
 
 <div align="center">
 
-<a href="../../graphs/contributors"><img src="https://img.shields.io/github/contributors/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=people&logoColor=58a6ff" alt="Contributors" /></a>
-<a href="../../commits/main"><img src="https://img.shields.io/github/commit-activity/m/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=gitcommit&logoColor=8957e5" alt="Commit activity" /></a>
-<a href="../../issues"><img src="https://img.shields.io/github/issues-pr/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=gitpullrequest&logoColor=00e5a0" alt="Open PRs" /></a>
-<a href="../../releases"><img src="https://img.shields.io/github/release-date-pre/qtjg/jailbreak-archive?style=for-the-badge&labelColor=0d1117&logo=calendar&logoColor=f0b429" alt="Release date" /></a>
+<a href="../../graphs/contributors"><img src="https://img.shields.io/github/contributors/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=people&logoColor=58a6ff" alt="Contributors" /></a>
+<a href="../../commits/main"><img src="https://img.shields.io/github/commit-activity/m/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=gitcommit&logoColor=8957e5" alt="Commit activity" /></a>
+<a href="../../issues"><img src="https://img.shields.io/github/issues-pr/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=gitpullrequest&logoColor=00e5a0" alt="Open PRs" /></a>
+<a href="../../issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/e2sy/jailbreak-archives?style=for-the-badge&labelColor=0d1117&logo=gitissue&logoColor=00e5a0" alt="Issues closed" /></a>
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=e2sy&repo=jailbreak-archives&theme=github_dark&show_owner=true" alt="Repository card" width="420" />
 
 </div>
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Socials & Community
 
@@ -210,7 +259,9 @@ Use the **"📥 New archive entry"** issue template to pre-fill the disclosure c
 
 Follow the project across platforms for new archive entries, technique breakdowns, and red-team drops. Pull requests, issue reports, and coordinated disclosure still happen here on GitHub — YouTube / Telegram / Discord are where released entries get walked through and discussed in real time.
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Roadmap
 
@@ -218,23 +269,31 @@ Follow the project across platforms for new archive entries, technique breakdown
 - [x] CI workflow (markdown lint + structure check + secret scan)
 - [x] Issue & PR templates
 - [x] Citation metadata ([CITATION.cff](./CITATION.cff))
-- [x] 3D-rendered banner & logo (`assets/`)
-- [x] First archived entries (`Antigravity-claude/`, `Chatgpt/`, `Qwen/`, `deepseek/` — 5 entries across 4 model families)
-- [ ] Reproduction harness (scripted model-version pinning)
+- [x] Animated banner, logo & section dividers (`assets/` — pure SMIL, no JavaScript)
+- [x] Contribution-snake animation workflow ([`.github/workflows/snake.yml`](./.github/workflows/snake.yml))
 - [x] Per-entry metadata front-matter (YAML)
+- [x] 14 archived entries across 7 model families (`Antigravity-claude/`, `Chatgpt/`, `Claude/`, `GLM/`, `Grok/`, `Qwen/`, `deepseek/`)
+- [ ] Reproduction harness (scripted model-version pinning)
 - [ ] Detection-rule reference implementations
 - [ ] Benchmark suite for alignment regression testing
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Acknowledgments
 
 - The **Contributor Covenant** for the Code of Conduct template — [contributor-covenant.org](https://www.contributor-covenant.org)
 - **shields.io** for the badge service — [shields.io](https://shields.io)
 - **Skill Icons** for the tech stack icons — [skillicons.dev](https://skillicons.dev)
+- **readme-typing-svg** for the animated tagline — [readme-typing-svg.demolab.com](https://readme-typing-svg.demolab.com)
+- **Platane/snk** for the contribution-snake animation — [github.com/Platane/snk](https://github.com/Platane/snk)
+- **github-readme-stats** for the repository card — [github.com/anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 - The broader AI safety research community for publishing adversarial prompt taxonomies that informed the structure of this archive
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Citation
 
@@ -243,17 +302,19 @@ If you use this archive in your research, please cite it. Citation metadata is p
 **BibTeX (example):**
 
 ```bibtex
-@software{qtjg_jailbreak_archive_2026,
-  author       = {{qtjg}},
-  title        = {{Jailbreak Archive}},
+@software{e2sy_jailbreak_archives_2026,
+  author       = {{e2sy}},
+  title        = {{Jailbreak Archives}},
   year         = 2026,
   version      = {0.1.0},
-  url          = {https://github.com/qtjg/jailbreak-archive},
+  url          = {https://github.com/e2sy/jailbreak-archives},
   license      = {MIT}
 }
 ```
 
----
+<div align="center">
+  <img src="./assets/divider-scan.svg" alt="" width="100%"/>
+</div>
 
 ## Disclaimer
 
@@ -262,16 +323,34 @@ If you use this archive in your research, please cite it. Citation metadata is p
 > - Content is provided "as is" without warranty. Users assume full responsibility for compliance with model provider Terms of Service and applicable legal regulations.
 > - Maintainers reserve the right to refuse or remove entries that violate vendor Terms of Service or facilitate abuse, fraud, or harm.
 
+<div align="center">
+  <img src="./assets/divider-wave.svg" alt="" width="100%"/>
+</div>
+
+## Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/e2sy/jailbreak-archives/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/e2sy/jailbreak-archives/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/e2sy/jailbreak-archives/output/github-contribution-grid-snake.svg" alt="Contribution snake animation" width="100%" />
+</picture>
+
+<sub>The snake eats this repository's contribution graph and rebuilds daily via [`.github/workflows/snake.yml`](./.github/workflows/snake.yml). It renders here automatically after the workflow's first run.</sub>
+
+</div>
+
 ---
 
 <div align="center">
 
-<img src="./assets/logo.svg" alt="Jailbreak Archive" width="64" height="64"/>
+<img src="./assets/logo-animated.svg" alt="Jailbreak Archives" width="96" height="96"/>
 
 **[Contributing](./CONTRIBUTING.md)** · **[Credits](./CREDITS.md)** · **[Code of Conduct](./CODE_OF_CONDUCT.md)** · **[Security](./SECURITY.md)** · **[Citation](./CITATION.cff)** · **[License](./LICENSE)**
 
 ---
 
-<sub>Built & maintained by [@qtjg](../../) — issues & PRs welcome.</sub>
+<sub>Built & maintained by [@e2sy](https://github.com/e2sy) — issues & PRs welcome.</sub>
 
 </div>

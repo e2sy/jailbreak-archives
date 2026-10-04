@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="wave divider">
+  <title>Animated wave divider</title>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="edgeFade">
+      <rect x="0" y="0" width="900" height="56" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#edgeFade)">
+    <!-- back wave: purple, slower -->
+    <g>
+      <path d="M0 28 Q30 44 60 28 T120 28 T180 28 T240 28 T300 28 T360 28 T420 28 T480 28 T540 28 T600 28 T660 28 T720 28 T780 28 T840 28 T900 28 T960 28 T1020 28 T1080 28 T1140 28"
+            fill="none" stroke="#8957e5" stroke-width="2.4" stroke-linecap="round" opacity="0.45"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-240 0" dur="13s" repeatCount="indefinite"/>
+    </g>
+    <!-- mid wave: green, medium -->
+    <g>
+      <path d="M0 28 Q30 14 60 28 T120 28 T180 28 T240 28 T300 28 T360 28 T420 28 T480 28 T540 28 T600 28 T660 28 T720 28 T780 28 T840 28 T900 28 T960 28 T1020 28 T1080 28 T1140 28"
+            fill="none" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" opacity="0.38"/>
+      <animateTransform attributeName="transform" type="translate" from="-240 0" to="0 0" dur="10s" repeatCount="indefinite"/>
+    </g>
+    <!-- front wave: blue, faster -->
+    <g>
+      <path d="M0 28 Q30 10 60 28 T120 28 T180 28 T240 28 T300 28 T360 28 T420 28 T480 28 T540 28 T600 28 T660 28 T720 28 T780 28 T840 28 T900 28 T960 28 T1020 28 T1080 28 T1140 28"
+            fill="none" stroke="#58a6ff" stroke-width="2.8" stroke-linecap="round" opacity="0.6"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-240 0" dur="7.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- center pulse node -->
+  <circle cx="450" cy="28" r="3.2" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="28" r="3.2" fill="none" stroke="#58a6ff">
+    <animate attributeName="r" values="3;14" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
